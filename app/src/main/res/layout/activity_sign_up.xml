@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Ui.SignUpActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/chef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chef"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_nadmin_dashboard"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/chef"
+        app:layout_constraintStart_toStartOf="@+id/chef"
+        app:layout_constraintTop_toBottomOf="@id/chef"
+        tools:layout_editor_absoluteY="196dp" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:paddingStart="20dp"
+        android:text="@string/your_location"
+        android:textColor="@color/red"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/signUp"
+        app:layout_constraintStart_toStartOf="@+id/signUp"
+        app:layout_constraintTop_toBottomOf="@id/signUp"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/locationName"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ed"
+        android:drawableStart="@drawable/location"
+        android:drawablePadding="15dp"
+        android:hint="@string/location"
+        android:inputType="none"
+        android:textColor="@color/black"
+        android:paddingStart="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/location"
+        app:layout_constraintStart_toStartOf="@id/location"
+        app:layout_constraintTop_toBottomOf="@id/location"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/nameOfOwner"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ed"
+        android:drawableStart="@drawable/usernew"
+        android:drawablePadding="15dp"
+        android:hint="@string/name_of_owner"
+        android:textColor="@color/black"
+        android:paddingStart="15dp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/locationName"
+        app:layout_constraintStart_toStartOf="@id/locationName"
+        app:layout_constraintTop_toBottomOf="@id/locationName"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/nameOfRes"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ed"
+        android:drawableStart="@drawable/home"
+        android:drawablePadding="15dp"
+        android:hint="@string/name_of_restaurant"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/nameOfOwner"
+        app:layout_constraintStart_toStartOf="@id/nameOfOwner"
+        app:layout_constraintTop_toBottomOf="@id/nameOfOwner"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ed"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="15dp"
+        android:hint="@string/email_or_phone"
+        android:paddingStart="15dp"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress|phone"
+        app:layout_constraintEnd_toEndOf="@+id/nameOfRes"
+        app:layout_constraintStart_toStartOf="@id/nameOfRes"
+        app:layout_constraintTop_toBottomOf="@id/nameOfRes"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ed"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="15dp"
+        android:hint="@string/password"
+        android:paddingStart="15dp"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/Email"
+        app:layout_constraintStart_toStartOf="@id/Email"
+        app:layout_constraintTop_toBottomOf="@id/Email"
+        tools:ignore="RtlSymmetry" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/CreateAccount"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/redbutton"
+        android:text="@string/create_account"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/Already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Already Have An Account?"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/CreateAccount"
+        app:layout_constraintStart_toStartOf="@+id/CreateAccount"
+        app:layout_constraintTop_toBottomOf="@+id/CreateAccount" />
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

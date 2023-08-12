@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Ui.ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backButton"
+            android:src="@drawable/arrow_left"
+            android:layout_margin="15dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            android:textColor="@color/red"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="117dp"
+        android:id="@+id/imageFood"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearProfile"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/add_image_res"/>
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ed"
+        android:drawableEnd="@drawable/edit_red"
+        android:drawablePadding="15dp"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:paddingStart="10dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageFood"
+        tools:ignore="Autofill,RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ed"
+        android:drawableEnd="@drawable/edit_red"
+        android:drawablePadding="15dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:paddingEnd="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintStart_toStartOf="@id/name"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        tools:ignore="Autofill,RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ed"
+        android:drawableEnd="@drawable/edit_red"
+        android:drawablePadding="15dp"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:paddingStart="10dp"
+        android:paddingEnd="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@id/email"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        tools:ignore="Autofill,RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ed"
+        android:drawableEnd="@drawable/eye_password"
+        android:drawablePadding="15dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:paddingEnd="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/phone"
+        app:layout_constraintStart_toStartOf="@id/phone"
+        app:layout_constraintTop_toBottomOf="@id/phone"
+        tools:ignore="Autofill,RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/locationName"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ed"
+        android:drawableEnd="@drawable/location_red"
+        android:hint="@string/location"
+        android:inputType="none"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/password"
+        app:layout_constraintStart_toStartOf="@id/password"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        tools:ignore="Autofill,RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/Address"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ed"
+        android:drawableEnd="@drawable/edit_red"
+        android:drawablePadding="15dp"
+        android:hint="@string/address"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:paddingEnd="15dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/locationName"
+        app:layout_constraintStart_toStartOf="@id/locationName"
+        app:layout_constraintTop_toBottomOf="@id/locationName"
+        tools:ignore="Autofill,RtlSymmetry" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/processbutton"
+        android:text="@string/save_information"
+        android:textAllCaps="false"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/Address"
+        app:layout_constraintStart_toStartOf="@id/Address"
+        app:layout_constraintTop_toBottomOf="@id/Address" />
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
