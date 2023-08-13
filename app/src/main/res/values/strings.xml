@@ -48,4 +48,10 @@
     <string name="address">Address</string>
     <string name="phone">Phone</string>
     <string name="save_information">Save Information</string>
+    <string name="edit_your_information">Edit your information</string>
+    <string name="name_customer">Name Customer</string>
+    <string name="quantity">Quantity:</string>
+    <string name="_0">0</string>
+    <string name="accept">Accept</string>
+    <string name="pending_orders">Pending Orders</string>
 </resources>

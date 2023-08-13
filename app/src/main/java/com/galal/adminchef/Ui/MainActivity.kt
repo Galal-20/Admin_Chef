@@ -13,6 +13,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        bind()
+
+    }
+
+    private fun bind() {
         binding.AddItem.setOnClickListener{
             Intent(this, AddItemActivity::class.java).also { startActivity(it) }
         }
@@ -37,6 +42,8 @@ class MainActivity : AppCompatActivity() {
             Intent(this,LoginActivity::class.java).also { startActivity(it) }
         }
 
-
+        binding.pending.setOnClickListener {
+            Intent(this,PendingOrdersActivity::class.java).also { startActivity(it) }
+        }
     }
 }
